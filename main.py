@@ -7,7 +7,7 @@ cwd = Path(__file__).parents[0]
 cwd = str(cwd)
 
 bot = commands.Bot(command_prefix = "$", case_insensitive = False)
-bot.config_token = "OTAxMTgyNzgxOTkwNzgwOTk5.YXMJ3g.creYDWCLcjU668l-dOIBMQppk2k"
+bot.config_token = os.getenv('TOKEN')
 logging.basicConfig(level = logging.INFO)
 
 @bot.command()
